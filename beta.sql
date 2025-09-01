@@ -20,3 +20,4 @@ CREATE TABLE users(
 INSERT INTO USERS(ide_number,firstname,lastname,mobile_number,email,password) VALUES('87072468','santiago','Basante','3005478954','thiagobsante106@gmail.com','1234');
 
 INSERT INTO USERS(ide_number,firstname,lastname,mobile_number,email,password) VALUES('87072468','peter','Mcalister','3005478954','thiagobsante106@gmail.com','1234');
+
