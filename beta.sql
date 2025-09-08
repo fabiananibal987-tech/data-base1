@@ -15,7 +15,38 @@ CREATE TABLE users(
     deleted_at TIMESTAMPTZ DEFAULT now()
 );
 
+CREATE TABLE "contries" (
+  id integer,
+  name varchar,
+  code varchar,
+  abrev varchar,
+  created_at timestamp DEFAULT now(),
+  updated_at timestamp DEFAULT now(),
+  delated_at timestamp NULL
+);
 
+
+CREATE TABLE "departments" (
+  id integer,
+  id_country integer,
+  name varchar,
+  code varchar,
+  abrev varchar,
+  created_at timestamp DEFAULT now(),
+  updated_at timestamp DEFAULT now(),
+  delated_at timestamp NULL
+);
+
+CREATE TABLE "cities" (
+  id integer,
+  id_department integer,
+  name varchar,
+  code varchar,
+  abrev varchar,
+  created_at timestamp DEFAULT now(),
+  updated_at timestamp DEFAULT now(),
+  delated_at timestamp NULL
+);
 
 INSERT INTO USERS(ide_number,firstname,lastname,mobile_number,email,password) VALUES('87072468','santiago','Basante','3005478954','thiagobsante106@gmail.com','1234');
 
